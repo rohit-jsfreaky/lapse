@@ -1,0 +1,376 @@
+{
+ "domains": [
+  "getrevlio.com"
+ ],
+ "date": "2026-11-20",
+ "certspotter": [
+  {
+   "id": "16787451806",
+   "tbs_sha256": "46a394350b1ee6579090f526079c5ce1f2c3fa4972c18f4137286bab14faffd7",
+   "cert_sha256": "1090905c2f744006675d2284dfe0e7f694e86f40951d5fb0a7b32ef262a7ed6e",
+   "dns_names": [
+    "vouchley.getrevlio.com"
+   ],
+   "pubkey_sha256": "49433e2988ab47227ad991e07753f8c459fd497dfee78a6a867a7d316a8fdb89",
+   "issuer": {
+    "friendly_name": "Let's Encrypt",
+    "pubkey_sha256": "2e8307068b6db620e4a39d068b5dee5d6ef5788cbb2c0b6d23ead84fcc17178c",
+    "name": "C=US, O=Let's Encrypt, CN=YR1"
+   },
+   "not_before": "2026-08-26T07:03:03Z",
+   "not_after": "2026-11-24T07:03:02Z",
+   "revoked": false
+  },
+  {
+   "id": "16926024189",
+   "tbs_sha256": "159fa412f8fb702c2f9cfb51ce0b9d7627ccfd33d631729cd4f1db5301835a99",
+   "cert_sha256": "72f011d3944f7568dfa33ba6ba0c68c9d02a6ec53c64217d06acf7841eea430f",
+   "dns_names": [
+    "pannly.getrevlio.com"
+   ],
+   "pubkey_sha256": "6d6e01dc3574635b8e4722cfb2dcaffbd62a89fed3f0c9cf5da6dcddce89c455",
+   "issuer": {
+    "friendly_name": "Let's Encrypt",
+    "pubkey_sha256": "9d637b3d27a9e570d07607b9ccadb80a70915c7af72afce12841b1b1da825fd1",
+    "name": "C=US, O=Let's Encrypt, CN=YR2"
+   },
+   "not_before": "2026-09-01T14:48:47Z",
+   "not_after": "2026-11-30T14:48:46Z",
+   "revoked": false
+  },
+  {
+   "id": "17024368418",
+   "tbs_sha256": "6bf77ae4a3113fa48c28e047f6a63461f02a27c9c8b80482fa2e06e319cc7a09",
+   "cert_sha256": "b963b1b032228f358f4d117b9577a1f9aec7aed7a6afa0bb8a8c395227865375",
+   "dns_names": [
+    "api.tieout.getrevlio.com"
+   ],
+   "pubkey_sha256": "9fcfea6fcdfa307e68b3b7c78e2d7d1a4a619039f2807f7387c1a3ebf506dd02",
+   "issuer": {
+    "friendly_name": "Let's Encrypt",
+    "pubkey_sha256": "6ebcefb4210b088654a38b03fea3d7d1c711b4fb1ddc363a45f9b1a4e53da01e",
+    "name": "C=US, O=Let's Encrypt, CN=YE1"
+   },
+   "not_before": "2026-09-06T16:22:24Z",
+   "not_after": "2026-12-05T16:22:23Z",
+   "revoked": false
+  },
+  {
+   "id": "17266239509",
+   "tbs_sha256": "a4395987ffec35ce6b894eaec317b1f08ddfddfd0d6862194c913cedddd3ed14",
+   "cert_sha256": "e676e6b4daa984995ce53db9af9c1baadca5018e51ab69082dea002ec555776e",
+   "dns_names": [
+    "api.monitoring.getrevlio.com"
+   ],
+   "pubkey_sha256": "d67b6ce68f215a09aaeb3e5c447006c9a526dbb6fd463ff9db2bc7e5e8c92392",
+   "issuer": {
+    "friendly_name": "Let's Encrypt",
+    "pubkey_sha256": "b3fb5d00e994cddf2cc9a4eea9f806bc5727e83cc0e4299bf956f2d524fe5376",
+    "name": "C=US, O=Let's Encrypt, CN=YE2"
+   },
+   "not_before": "2026-09-18T22:46:52Z",
+   "not_after": "2026-12-17T22:46:51Z",
+   "revoked": false
+  },
+  {
+   "id": "17271814535",
+   "tbs_sha256": "8d414d8c294ee47cc944a6b8f24c5dcfddb37ab6618452a1be60822ebf940c1c",
+   "cert_sha256": "2254d85e1fd94437ea241e9b2ab6a7f1a076ecbe39b5bb6ff9b64e5472010fbe",
+   "dns_names": [
+    "api.pannly.getrevlio.com"
+   ],
+   "pubkey_sha256": "9a28adb3c1cad3edfef38f1a7629dd739ba8cdbbad1ef4049af07afa259eac79",
+   "issuer": {
+    "friendly_name": "Let's Encrypt",
+    "pubkey_sha256": "b3fb5d00e994cddf2cc9a4eea9f806bc5727e83cc0e4299bf956f2d524fe5376",
+    "name": "C=US, O=Let's Encrypt, CN=YE2"
+   },
+   "not_before": "2026-09-19T05:25:45Z",
+   "not_after": "2026-12-18T05:25:44Z",
+   "revoked": false
+  },
+  {
+   "id": "17271823518",
+   "tbs_sha256": "dd713da159c74f50d1c478e3fecc018898451f84a91925ef0849ab7ebf13ddce",
+   "cert_sha256": "9820d0c09c2943f1e5709dca2247d9250eb84a0e025155acf7cd55a2833a70fd",
+   "dns_names": [
+    "api.vouchley.getrevlio.com"
+   ],
+   "pubkey_sha256": "43c57f2ca4c04af8e7a6e787037b1a2fabd1da36a09c668a11e01be2eb293201",
+   "issuer": {
+    "friendly_name": "Let's Encrypt",
+    "pubkey_sha256": "6ebcefb4210b088654a38b03fea3d7d1c711b4fb1ddc363a45f9b1a4e53da01e",
+    "name": "C=US, O=Let's Encrypt, CN=YE1"
+   },
+   "not_before": "2026-09-19T05:26:18Z",
+   "not_after": "2026-12-18T05:26:17Z",
+   "revoked": false
+  },
+  {
+   "id": "17328385324",
+   "tbs_sha256": "cc4c576e44d028d9c48d8013414be5687517507a7ed4f4c27d2e23b21dbea75f",
+   "cert_sha256": "4a3a9882bb74fbf2f3b7e3e7a389e346004b264763cb7e7b4941f102e8904c41",
+   "dns_names": [
+    "monitoring.getrevlio.com"
+   ],
+   "pubkey_sha256": "64bcccc33e2c2f5550870eaeb8d6086fb86291f417ffce7d7597958b13d35b21",
+   "issuer": {
+    "friendly_name": "Let's Encrypt",
+    "pubkey_sha256": "9d637b3d27a9e570d07607b9ccadb80a70915c7af72afce12841b1b1da825fd1",
+    "name": "C=US, O=Let's Encrypt, CN=YR2"
+   },
+   "not_before": "2026-09-21T21:22:17Z",
+   "not_after": "2026-12-20T21:22:16Z",
+   "revoked": false
+  },
+  {
+   "id": "17650673302",
+   "tbs_sha256": "430d732e36ea78686e0dbdad3f72a60e8bf7bb25d29808d8ebc1b132ded80541",
+   "cert_sha256": "5c879ca49836cf5c63c973387f99f19766a89ef477562b9c35fdbf932e63a670",
+   "dns_names": [
+    "getrevlio.com"
+   ],
+   "pubkey_sha256": "0c6c5711ddbf7c398b9c180824848fc971f6889f1dc29ee0b3be37e08d3998aa",
+   "issuer": {
+    "friendly_name": "Let's Encrypt",
+    "pubkey_sha256": "2e8307068b6db620e4a39d068b5dee5d6ef5788cbb2c0b6d23ead84fcc17178c",
+    "name": "C=US, O=Let's Encrypt, CN=YR1"
+   },
+   "not_before": "2026-10-07T23:11:44Z",
+   "not_after": "2027-01-05T23:11:43Z",
+   "revoked": false
+  },
+  {
+   "id": "17733996902",
+   "tbs_sha256": "d73ba097b0b10453243d51b466355e46fb6d5dbdf79aa08f86bd6cefafcbe32a",
+   "cert_sha256": "0ec1020ebb3803edede24ccc0009273d081383b635747fe7b6201e38f9413dc8",
+   "dns_names": [
+    "www.getrevlio.com"
+   ],
+   "pubkey_sha256": "310af6b16b240284439026dc9624058c3875859b84c39579d4c1b29958ac9606",
+   "issuer": {
+    "friendly_name": "Let's Encrypt",
+    "pubkey_sha256": "9d637b3d27a9e570d07607b9ccadb80a70915c7af72afce12841b1b1da825fd1",
+    "name": "C=US, O=Let's Encrypt, CN=YR2"
+   },
+   "not_before": "2026-10-12T03:43:50Z",
+   "not_after": "2027-01-10T03:43:49Z",
+   "revoked": false
+  },
+  {
+   "id": "17813442077",
+   "tbs_sha256": "70fdf6bae9026de7bf1b90f209723bb2b32f14acdf040b297bdf7530f834399d",
+   "cert_sha256": "b8d2653c14cfac019dfd504414000b891c150416c2c2d632f66082ad7f799454",
+   "dns_names": [
+    "api.pinpoint.getrevlio.com"
+   ],
+   "pubkey_sha256": "93f5d2c81b939fb0f134fba488702b74fdc941b2b18816ef98c20d0e1f6f3bed",
+   "issuer": {
+    "friendly_name": "Let's Encrypt",
+    "pubkey_sha256": "b3fb5d00e994cddf2cc9a4eea9f806bc5727e83cc0e4299bf956f2d524fe5376",
+    "name": "C=US, O=Let's Encrypt, CN=YE2"
+   },
+   "not_before": "2026-10-16T05:25:42Z",
+   "not_after": "2027-01-14T05:25:41Z",
+   "revoked": false
+  },
+  {
+   "id": "17865782886",
+   "tbs_sha256": "727d69715fd16d3f7a67b0fd5f0bbc4e1b2f16365f128adefd53b951cf4cece3",
+   "cert_sha256": "270d1db482ec00a9d6dfd781144b230b8e4fcfff26d30ec720f4edfed8a8820e",
+   "dns_names": [
+    "pinpoint.getrevlio.com"
+   ],
+   "pubkey_sha256": "9016cb106610809dfcf32b36a94652c287b537c5a3f31fee50b380d2249bbb71",
+   "issuer": {
+    "friendly_name": "Let's Encrypt",
+    "pubkey_sha256": "2e8307068b6db620e4a39d068b5dee5d6ef5788cbb2c0b6d23ead84fcc17178c",
+    "name": "C=US, O=Let's Encrypt, CN=YR1"
+   },
+   "not_before": "2026-10-19T08:32:48Z",
+   "not_after": "2027-01-17T08:32:47Z",
+   "revoked": false
+  },
+  {
+   "id": "17944669627",
+   "tbs_sha256": "aa3edb3b0cab712b0e3938ad59a597390ec512cc115ced753cb31d235691dec6",
+   "cert_sha256": "123954251d5278d33583453db4d2f898f1c24f7f713ceaad82637790526f47bd",
+   "dns_names": [
+    "api.vouchley.getrevlio.com"
+   ],
+   "pubkey_sha256": "545b94bb52edd43a9087503184437648f1f8b68d547790701c9722e560e08368",
+   "issuer": {
+    "friendly_name": "Let's Encrypt",
+    "pubkey_sha256": "2e8307068b6db620e4a39d068b5dee5d6ef5788cbb2c0b6d23ead84fcc17178c",
+    "name": "C=US, O=Let's Encrypt, CN=YR1"
+   },
+   "not_before": "2026-10-23T14:47:39Z",
+   "not_after": "2027-01-21T14:47:38Z",
+   "revoked": false
+  },
+  {
+   "id": "17944669858",
+   "tbs_sha256": "e2e361a94bb44e2966a785aa3f00f0d2b9a65f743471f4e7972ddd9dceadfd66",
+   "cert_sha256": "c3747a42851a67c9e8cfbc7c8654eaa768e52219254e55ad503d82d74ddb2081",
+   "dns_names": [
+    "api.pannly.getrevlio.com"
+   ],
+   "pubkey_sha256": "4ff0951e4739589e9beb2a4d8e08a583541380a84605a4e5a3b81027b4503ad2",
+   "issuer": {
+    "friendly_name": "Let's Encrypt",
+    "pubkey_sha256": "9d637b3d27a9e570d07607b9ccadb80a70915c7af72afce12841b1b1da825fd1",
+    "name": "C=US, O=Let's Encrypt, CN=YR2"
+   },
+   "not_before": "2026-10-23T14:47:41Z",
+   "not_after": "2027-01-21T14:47:40Z",
+   "revoked": false
+  },
+  {
+   "id": "18009527587",
+   "tbs_sha256": "52475647dd3481c543b28bcae7ad8d862a53d04d74283818167435c8c3384f61",
+   "cert_sha256": "ec6b369da5c9bd43ab3a9bc721ebe575b19afa2b25ead373b12b3e21d5c22c23",
+   "dns_names": [
+    "vouchley.getrevlio.com"
+   ],
+   "pubkey_sha256": "72ba65ba92ffafedbb533845349178b4761338e6b15c987c84f7e7144a2b8ac1",
+   "issuer": {
+    "friendly_name": "Let's Encrypt",
+    "pubkey_sha256": "9d637b3d27a9e570d07607b9ccadb80a70915c7af72afce12841b1b1da825fd1",
+    "name": "C=US, O=Let's Encrypt, CN=YR2"
+   },
+   "not_before": "2026-10-27T06:33:58Z",
+   "not_after": "2027-01-25T06:33:57Z",
+   "revoked": false
+  },
+  {
+   "id": "18140935351",
+   "tbs_sha256": "fa8827887c75f75576b21c4b29780312d6cc8835e4bfc97ff784918b098ab881",
+   "cert_sha256": "d22c57e1a6f653d1597d250ff950975f6cab563e429a9ee9ddc44c328646fbe8",
+   "dns_names": [
+    "pannly.getrevlio.com"
+   ],
+   "pubkey_sha256": "27f84152522a584e99c0966ff0cf60e49b33be29bbdc838fd612864ae0f7500f",
+   "issuer": {
+    "friendly_name": "Let's Encrypt",
+    "pubkey_sha256": "2e8307068b6db620e4a39d068b5dee5d6ef5788cbb2c0b6d23ead84fcc17178c",
+    "name": "C=US, O=Let's Encrypt, CN=YR1"
+   },
+   "not_before": "2026-11-03T03:08:57Z",
+   "not_after": "2027-02-01T03:08:56Z",
+   "revoked": false
+  }
+ ],
+ "served": [
+  {
+   "host": "getrevlio.com",
+   "ok": true,
+   "notBefore": "2026-10-07T23:11:44.000Z",
+   "notAfter": "2027-01-05T23:11:43.000Z",
+   "issuer": "Let's Encrypt",
+   "sha256": "5c879ca49836cf5c63c973387f99f19766a89ef477562b9c35fdbf932e63a670",
+   "names": [
+    "getrevlio.com"
+   ],
+   "nameMismatch": false
+  },
+  {
+   "host": "www.getrevlio.com",
+   "ok": true,
+   "notBefore": "2026-10-12T03:43:50.000Z",
+   "notAfter": "2027-01-10T03:43:49.000Z",
+   "issuer": "Let's Encrypt",
+   "sha256": "0ec1020ebb3803edede24ccc0009273d081383b635747fe7b6201e38f9413dc8",
+   "names": [
+    "www.getrevlio.com"
+   ],
+   "nameMismatch": false
+  },
+  {
+   "host": "monitoring.getrevlio.com",
+   "ok": true,
+   "notBefore": "2026-09-21T21:22:17.000Z",
+   "notAfter": "2026-12-20T21:22:16.000Z",
+   "issuer": "Let's Encrypt",
+   "sha256": "4a3a9882bb74fbf2f3b7e3e7a389e346004b264763cb7e7b4941f102e8904c41",
+   "names": [
+    "monitoring.getrevlio.com"
+   ],
+   "nameMismatch": false
+  },
+  {
+   "host": "api.monitoring.getrevlio.com",
+   "ok": false,
+   "error": "connection refused"
+  },
+  {
+   "host": "pannly.getrevlio.com",
+   "ok": true,
+   "notBefore": "2026-11-03T03:08:57.000Z",
+   "notAfter": "2027-02-01T03:08:56.000Z",
+   "issuer": "Let's Encrypt",
+   "sha256": "d22c57e1a6f653d1597d250ff950975f6cab563e429a9ee9ddc44c328646fbe8",
+   "names": [
+    "pannly.getrevlio.com"
+   ],
+   "nameMismatch": false
+  },
+  {
+   "host": "api.pannly.getrevlio.com",
+   "ok": true,
+   "notBefore": "2026-10-23T14:47:41.000Z",
+   "notAfter": "2027-01-21T14:47:40.000Z",
+   "issuer": "Let's Encrypt",
+   "sha256": "c3747a42851a67c9e8cfbc7c8654eaa768e52219254e55ad503d82d74ddb2081",
+   "names": [
+    "api.pannly.getrevlio.com"
+   ],
+   "nameMismatch": false
+  },
+  {
+   "host": "pinpoint.getrevlio.com",
+   "ok": true,
+   "notBefore": "2026-10-19T08:32:48.000Z",
+   "notAfter": "2027-01-17T08:32:47.000Z",
+   "issuer": "Let's Encrypt",
+   "sha256": "270d1db482ec00a9d6dfd781144b230b8e4fcfff26d30ec720f4edfed8a8820e",
+   "names": [
+    "pinpoint.getrevlio.com"
+   ],
+   "nameMismatch": false
+  },
+  {
+   "host": "api.pinpoint.getrevlio.com",
+   "ok": false,
+   "error": "connection refused"
+  },
+  {
+   "host": "api.tieout.getrevlio.com",
+   "ok": false,
+   "error": "connection refused"
+  },
+  {
+   "host": "vouchley.getrevlio.com",
+   "ok": true,
+   "notBefore": "2026-10-27T06:33:58.000Z",
+   "notAfter": "2027-01-25T06:33:57.000Z",
+   "issuer": "Let's Encrypt",
+   "sha256": "ec6b369da5c9bd43ab3a9bc721ebe575b19afa2b25ead373b12b3e21d5c22c23",
+   "names": [
+    "vouchley.getrevlio.com"
+   ],
+   "nameMismatch": false
+  },
+  {
+   "host": "api.vouchley.getrevlio.com",
+   "ok": true,
+   "notBefore": "2026-10-23T14:47:39.000Z",
+   "notAfter": "2027-01-21T14:47:38.000Z",
+   "issuer": "Let's Encrypt",
+   "sha256": "123954251d5278d33583453db4d2f898f1c24f7f713ceaad82637790526f47bd",
+   "names": [
+    "api.vouchley.getrevlio.com"
+   ],
+   "nameMismatch": false
+  }
+ ]
+}

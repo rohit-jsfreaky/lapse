@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+/* Lapse: an instrument panel for certificates. White, aubergine ink, one violet, three state colours. */
+:root {
+  --paper: #ffffff;
+  --wash: #f7f5fa;
+  --ink: #241534;
+  --ink-2: #4a3d5c;
+  --muted: #6e6480;
+  --faint: #a69db3;
+  --line: #e9e4f0;
+  --rule: #d9d1e4;
+  --violet: #5b34c9;
+  --violet-soft: #efeafb;
+  --good: #23815a;
+  --good-soft: #e5f3ec;
+  --wait: #9a6200;
+  --wait-soft: #fbf0d9;
+  --bad: #c2352b;
+  --bad-soft: #fbe6e4;
+  --used: #cfc7dc;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-wash: var(--wash);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-line: var(--line);
+  --color-rule: var(--rule);
+  --color-violet: var(--violet);
+  --color-violet-soft: var(--violet-soft);
+  --color-good: var(--good);
+  --color-good-soft: var(--good-soft);
+  --color-wait: var(--wait);
+  --color-wait-soft: var(--wait-soft);
+  --color-bad: var(--bad);
+  --color-bad-soft: var(--bad-soft);
+  --color-used: var(--used);
+  --font-sans: var(--font-schibsted), "Helvetica Neue", Arial, sans-serif;
+  --font-mono: var(--font-geist-mono), Menlo, monospace;
+}
+
+html { -webkit-font-smoothing: antialiased; }
+body { background: var(--paper); color: var(--ink); font-family: var(--font-schibsted), "Helvetica Neue", Arial, sans-serif; }
+::selection { background: #ddd3f7; }
+
+@layer components {
+  .label { font-family: var(--font-geist-mono), Menlo, monospace; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+  .btn { display: inline-flex; align-items: center; gap: 8px; border-radius: 9px; font-weight: 700; font-size: 14px; padding: 8px 14px; white-space: nowrap; transition: background-color 120ms ease, border-color 120ms ease; }
+  .btn:disabled { opacity: 0.45; cursor: not-allowed; }
+  .btn-ink { background: var(--ink); color: #fff; }
+  .btn-ink:hover:not(:disabled) { background: #3a2752; }
+  .btn-violet { background: var(--violet); color: #fff; }
+  .btn-violet:hover:not(:disabled) { background: #4a27ad; }
+  .btn-line { background: var(--paper); color: var(--ink); border: 1.5px solid var(--rule); }
+  .btn-line:hover:not(:disabled) { border-color: var(--ink); }
+  .input { width: 100%; background: var(--paper); border: 1.5px solid var(--rule); border-radius: 9px; padding: 8px 12px; font-size: 14px; outline: none; transition: border-color 120ms ease; }
+  .input:focus { border-color: var(--violet); }
+  .scroll-thin { scrollbar-width: thin; scrollbar-color: var(--rule) transparent; }
+}
