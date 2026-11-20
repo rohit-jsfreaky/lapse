@@ -31,7 +31,7 @@ export async function live(domains: string[], key?: string): Promise<Loaded> {
   const hosts = [...new Set(domains.flatMap((d) => hostnames(certs, d)))].filter((h) => !h.startsWith("*.")).slice(0, 60);
   const res = await fetch("/api/served", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ hosts }) });
   const served = res.ok ? ((await res.json()) as Served[]) : [];
-  return { domains, date: today(), certs, served, source: `${domains.join(", ")} · live` };
+  return { domains, date: today(), certs, served, source: `${domains.join(", ")} · live${res.ok ? "" : " · logs only (run it yourself for the server check)"}` };
 }
 
 export const SNAPSHOT = "/samples/getrevlio.json";

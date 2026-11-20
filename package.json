@@ -3,15 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
+    "dev": "next dev",
     "start": "next start",
     "lint": "eslint",
     "test": "node --experimental-strip-types --test tests/*.test.ts",
     "check": "hyper-elements check templates/",
-    "reports": "rm -f docs/*.values.json && for t in report alert calendar; do hyper-elements design new templates/$t.tsx -o docs/getrevlio.$t.values.json --values docs/getrevlio.json; done && hyper-elements render docs/ --out out",
+    "reports": "rm -f docs/*.values.json && for t in report alert calendar; do hyper-elements design new templates/$t.tsx -o docs/getrevlio.$t.values.json --values docs/getrevlio.json; done && hyper-elements render docs/ --out renders",
     "sample": "node --experimental-strip-types scripts/sample.ts",
-    "preview:email": "hyper-elements preview templates/alert.tsx"
+    "preview:email": "hyper-elements preview templates/alert.tsx",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {
     "@hyper-elements/email-clients": "^0.5.3",
@@ -19,7 +23,9 @@
     "@hyper-elements/react": "^0.5.2",
     "@react-pdf/renderer": "^4.9.0",
     "@resvg/resvg-js": "^2.6.2",
+    "@resvg/resvg-wasm": "^2.6.2",
     "@untitledui/icons": "^0.0.23",
+    "buffer": "^6.0.3",
     "next": "16.4.6",
     "react": "19.3.0",
     "react-dom": "19.3.0",
@@ -27,6 +33,7 @@
   },
   "devDependencies": {
     "@hyper-elements/cli": "^0.3.3",
+    "@opennextjs/cloudflare": "^1.20.18",
     "@tailwindcss/turbopack": "^4.3.5",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -34,7 +41,8 @@
     "eslint": "^9",
     "eslint-config-next": "16.4.6",
     "tailwindcss": "4.3.3",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.165.0"
   },
   "type": "module",
   "hyperElements": {

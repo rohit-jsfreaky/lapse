@@ -1,5 +1,6 @@
 "use client";
 
+import { renderLocal } from "@/lib/render-local";
 import NextLink from "next/link";
 import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { AlertTriangle, ArrowLeft, CalendarDate, ChevronDown, Download01, FileCheck02, Mail01, XClose } from "@untitledui/icons";
@@ -89,7 +90,7 @@ export function Panel() {
               {values.attention ? `${values.attention} of ${values.total} hosts need attention` : `All ${values.total - values.retired} live hosts renew on time`}
             </h1>
             <p className="mt-2 text-[14.5px] text-ink-2 max-w-[720px]">
-              {`${hosts.length} hostnames with an unexpired certificate in Certificate Transparency, each asked for its certificate on port 443${values.nextExpiry ? `. Next expiry: ${nice(values.nextExpiry)}` : ""}. Checked ${nice(loaded.date)}.`}
+              {`${hosts.length} hostnames with an unexpired certificate in Certificate Transparency, ${loaded.served.length ? "each asked for its certificate on port 443" : "judged from the logs alone (the server check runs when you run Lapse yourself)"}${values.nextExpiry ? `. Next expiry: ${nice(values.nextExpiry)}` : ""}. Checked ${nice(loaded.date)}.`}
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
               <Chip on={only === "all"} onClick={() => setOnly("all")} label="All" n={hosts.length} />
@@ -230,7 +231,7 @@ function HostRow({ h, at, today, open, toggle }: { h: Host; at: (iso: string) =>
           <dl className="mt-3 grid sm:grid-cols-2 gap-x-6 gap-y-1.5 text-[12.5px]">
             <Def k="In the logs" v={`${h.issuer}, ${h.lifeDays} days: ${nice(h.notBefore)} to ${nice(h.notAfter)}`} />
             <Def k="Renews around" v={nice(h.renewBy)} />
-            <Def k="Served now" v={!s ? "Not checked (wildcard)" : s.ok ? `${s.issuer}, ${nice(s.notBefore!)} to ${nice(s.notAfter!)}${s.nameMismatch ? ", wrong name" : ""}` : s.error ?? "No answer"} />
+            <Def k="Served now" v={!s ? (h.host.startsWith("*.") ? "Not checked (wildcard)" : "Not checked here") : s.ok ? `${s.issuer}, ${nice(s.notBefore!)} to ${nice(s.notAfter!)}${s.nameMismatch ? ", wrong name" : ""}` : s.error ?? "No answer"} />
             <Def k="Certificates in the logs" v={String(h.certs)} />
           </dl>
         </div>
@@ -274,7 +275,7 @@ function Sheet({ out, setOut, values, onClose }: { out: Out; setOut: (o: Out) =>
   useEffect(() => {
     let alive = true;
     const timer = setTimeout(async () => {
-      const res = await fetch("/api/render", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ output: out, values }) });
+      const res = await renderLocal({ method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ output: out, values }) });
       const type = res.headers.get("Content-Type") ?? "";
       const next = type.includes("json")
         ? await res.json().then((j) => (res.ok ? { html: j.html as string } : { issues: (j.diagnostics ?? [{ message: j.error }]).map((d: { message: string; path?: string }) => `${d.path ? `${d.path.replace(/^values\./, "")}: ` : ""}${d.message}`) }))
@@ -293,7 +294,7 @@ function Sheet({ out, setOut, values, onClose }: { out: Out; setOut: (o: Out) =>
   }, [out, key]);
 
   async function download() {
-    const res = await fetch("/api/render", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ output: out, values }) });
+    const res = await renderLocal({ method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ output: out, values }) });
     if (!res.ok) return;
     const a = document.createElement("a");
     a.href = out === "alert" ? URL.createObjectURL(new Blob([(await res.json()).html], { type: "text/html" })) : URL.createObjectURL(await res.blob());
